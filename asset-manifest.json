@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VRDNet/static/css/main.d00d8916.css",
+    "main.js": "/VRDNet/static/js/main.2f115a69.js",
+    "index.html": "/VRDNet/index.html",
+    "main.d00d8916.css.map": "/VRDNet/static/css/main.d00d8916.css.map",
+    "main.2f115a69.js.map": "/VRDNet/static/js/main.2f115a69.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d00d8916.css",
+    "static/js/main.2f115a69.js"
+  ]
+}

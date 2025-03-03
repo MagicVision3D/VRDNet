@@ -1,0 +1,26 @@
+@import "variables";
+@import "functions";
+@import "table";
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-anchor: none;
+}
+
+nav {
+    --bs-navbar-padding-x: 10px !important;
+}
+
+header, footer, main {
+    // !important is used to override the default padding from bootstrap
+	padding: 10px !important;
+}
+
+.btns-hor {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
