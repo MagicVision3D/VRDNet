@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/VRDNet/static/css/main.38572c70.css",
-    "main.js": "/VRDNet/static/js/main.3fcf644c.js",
+    "main.js": "/VRDNet/static/js/main.50b1241f.js",
     "index.html": "/VRDNet/index.html",
     "main.38572c70.css.map": "/VRDNet/static/css/main.38572c70.css.map",
-    "main.3fcf644c.js.map": "/VRDNet/static/js/main.3fcf644c.js.map"
+    "main.50b1241f.js.map": "/VRDNet/static/js/main.50b1241f.js.map"
   },
   "entrypoints": [
     "static/css/main.38572c70.css",
-    "static/js/main.3fcf644c.js"
+    "static/js/main.50b1241f.js"
   ]
 }
