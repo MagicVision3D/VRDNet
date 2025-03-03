@@ -92,7 +92,7 @@ export default class PLYViewerv4 extends Component{
     }
 
     loadGeometry(url, point_size){
-        this.setState({isLoading: true})
+        this.setState({isLoading: true, loaded: 0})
         const loader = new PLYLoader();
         loader.load(url, (geometry) => {
             this.setState({
