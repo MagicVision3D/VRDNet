@@ -41,8 +41,8 @@ export const Data = {
     "rockery": {
         "input" : process.env.PUBLIC_URL + '/ply/rockery/input.ply',
         "gt" : process.env.PUBLIC_URL + '/ply/rockery/input_gt.ply',
-        //"240" : process.env.PUBLIC_URL + '/ply/rockery/res-240-pred.ply',
-        "240" : process.env.PUBLIC_URL + 'http://114.212.87.191:2025/exp/arbitrary/semantic3d/sg27_station4_intensity_rgb/1.50000.ply',
+        "240" : process.env.PUBLIC_URL + '/ply/rockery/res-240-pred.ply',
+        //"240" : process.env.PUBLIC_URL + 'http://114.212.87.191:2025/exp/arbitrary/semantic3d/sg27_station4_intensity_rgb/1.50000.ply',
         "120" : process.env.PUBLIC_URL + '/ply/rockery/res-120-pred.ply',
         "60" : process.env.PUBLIC_URL + '/ply/rockery/res-60-pred.ply',
         "30" : process.env.PUBLIC_URL + '/ply/rockery/res-30-pred.ply',

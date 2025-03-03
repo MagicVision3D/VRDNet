@@ -1,5 +1,6 @@
 import React, {Component, Suspense, useEffect, useRef} from 'react'
 import {PLYViewer, PLYViewerv2} from './viewer'
+import PLYViewerv4 from "./viewer"
 import {OrbitControls} from "@react-three/drei";
 import {Html, useProgress} from '@react-three/drei'
 import {Canvas,useLoader, useThree} from '@react-three/fiber'
@@ -8,6 +9,7 @@ import { LoadingAnimation, LoadingAnimation3 } from './anim';
 import './anim.css';
 
 function Loading1(){
+    console.log("1 loading")
     return <Html>Loading...</Html>
     /*
     return (
@@ -99,12 +101,7 @@ export default class Interactive extends Component{
                 </div>
                 
                     <div style={{width: "100%", height: "600px", background: "rgb(226, 226, 226)", marginTop:"5px", borderRadius:"18px"}}>
-                        <Canvas style={{borderRadius:"18px"}}>
-                        <Suspense fallback={<LoadingAnimation3/>}>
-                            <PLYViewerv2 url={this.state.input_path} pointsize={this.state.point_size}></PLYViewerv2>
-                        </Suspense>
-                        <OrbitControls enableRotate={true} enableDamping={true} up={[0,0,1]}></OrbitControls>
-                        </Canvas> 
+                        <PLYViewerv4 url={this.state.input_path} point_size={this.state.point_size}/>
                     </div>
                 
                     
@@ -113,3 +110,11 @@ export default class Interactive extends Component{
     }
 }
 //
+/*
+<Canvas style={{borderRadius:"18px"}}>
+    <Suspense fallback={<Loading1/>}>
+        <PLYViewerv2 url={this.state.input_path} pointsize={this.state.point_size}></PLYViewerv2>
+    </Suspense>
+<OrbitControls enableRotate={true} enableDamping={true} up={[0,0,1]}></OrbitControls>
+</Canvas> 
+*/
