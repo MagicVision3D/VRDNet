@@ -1,23 +1,8 @@
 import React, {Component, Suspense, useEffect, useRef} from 'react'
-import {PLYViewer, PLYViewerv2} from './viewer'
 import PLYViewerv4 from "./viewer"
-import {OrbitControls} from "@react-three/drei";
-import {Html, useProgress} from '@react-three/drei'
-import {Canvas,useLoader, useThree} from '@react-three/fiber'
 import { Data } from './data';
-import { LoadingAnimation, LoadingAnimation3 } from './anim';
 import './anim.css';
 
-function Loading1(){
-    console.log("1 loading")
-    return <Html>Loading...</Html>
-    /*
-    return (
-        <div class="loader_body">
-            <div class="loader"></div>
-        </div>
-    )*/
-}
 
 export default class Interactive extends Component{
     
@@ -109,12 +94,3 @@ export default class Interactive extends Component{
         )
     }
 }
-//
-/*
-<Canvas style={{borderRadius:"18px"}}>
-    <Suspense fallback={<Loading1/>}>
-        <PLYViewerv2 url={this.state.input_path} pointsize={this.state.point_size}></PLYViewerv2>
-    </Suspense>
-<OrbitControls enableRotate={true} enableDamping={true} up={[0,0,1]}></OrbitControls>
-</Canvas> 
-*/

@@ -2,10 +2,9 @@ import {Canvas,useLoader, useThree} from '@react-three/fiber'
 import {FC, useEffect, useState, useRef, Component} from 'react'
 import {PLYLoader} from 'three/examples/jsm/loaders/PLYLoader'
 import {BufferGeometry, Matrix4, Vector3} from 'three'
-import * as THREE from "three";
 import {OrbitControls} from "@react-three/drei";
 import "./anim.css"
-import { getMouseEventOptions } from '@testing-library/user-event/dist/utils';
+
 
 function to_origin (mesh){
 	var mat = new Matrix4;
